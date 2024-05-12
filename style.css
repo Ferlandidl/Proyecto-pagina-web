@@ -1,0 +1,409 @@
+
+/*Encabezado*/
+header{
+	background-color: #127369;	
+}
+
+/* Buscador */
+#search input::-webkit-search-decoration,
+#search input::-webkit-search-cancel-button {
+    display: none;
+}
+
+#search input[type=search] {
+    outline: none;
+    width: 15px;
+    padding-left: 10px;
+    color: transparent;
+    cursor: pointer;
+    float: left;
+    background: #fff url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+    border: 2px solid #00457e;
+    padding: 9px 10px 9px 32px;
+    width: 55px;
+
+    -webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+    border-radius: 10em;
+
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+
+#search input[type=search]:hover {
+    background-color: #fff;
+}
+
+/*  barra  */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#search input[type=search]:focus {
+    width: 150px;
+    padding-left: 32px;
+    color: #000;
+    background-color: #fff;
+    cursor: auto;
+    width: 130px;
+    background-color: #fff;
+    border: 2px solid #00457e;
+	
+}
+
+#search input:-moz-placeholder {
+    color: transparent;
+}
+
+#search input::-webkit-input-placeholder {
+    color: transparent;
+}
+
+/*Logo*/
+.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+    position: static; 
+}
+/* Contenedor de ícono de usuario y cuadro del carrito */
+.user-cart-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+/* carrito y usuario */
+.user-icon, .cart-box {
+    color: #ffffff;
+    font-size: 24px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+
+/*Navbar*/
+* {
+	margin:0px;
+	padding:0px;
+}
+
+#navbar {
+	margin:auto;
+	width:500px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+ul {
+	list-style:none;
+}
+
+.navbar > li {
+	float:left;
+}
+
+.navbar li a {
+	background-color:#10403B;
+	color:#fff;
+	text-decoration:none;
+	padding:15px 15.3px;
+	display:block;
+}
+
+.navbar li a:hover {
+	background-color:rgb(191, 191, 191);
+}
+
+.navbar li ul {
+	display:none;
+	position:absolute;
+	min-width:140px;
+}
+
+.navbar li:hover > ul {
+	display:block;
+}
+
+.navbar li ul li {
+	position:relative;
+}
+
+.navbar li ul li ul {
+	right:-140px;
+	top:0px;
+}
+
+/*body */
+body {
+    font-family: Arial, sans-serif;
+}
+/*Libro de la semana css */ 
+
+.cuadro-margen{
+    background-color: #d3e0e0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+.book {
+    display: flex; /* Utiliza flexbox para colocar elementos en línea */
+    margin-bottom: 35px;
+}
+
+/* Estilo para el contenido del libro */
+.content {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    flex-grow: 1; 
+    padding-left: 20px; 
+}
+
+/* Estilo para la imagen */
+.portada img {
+    width: 150px; 
+    height: auto; 
+    margin-right: 20px; /* Espacio a la derecha de la imagen */
+}
+
+/* Estilo para el título del libro */
+.title a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilo para el autor */
+.autor {
+    font-style: italic;
+}
+
+/* Estilo para el texto del libro */
+.descripcion {
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+.disponible {
+    color: green;
+}
+
+.barra-vertical{
+    height:200px;
+    width:5px;
+    border-width:0;
+    background-color:#869292;
+   }
+
+.libro-precio {
+  font-size: 18px;
+  font-weight: bold;
+
+}
+.libro-comprar {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.libro-comprar a {
+	color:#fff;
+	text-decoration:none;
+	padding:10px;
+	display:block;
+}
+
+.libro-comprar a:hover {
+	background-color:rgb(210, 224, 221);
+}
+
+.recursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Recomendacion de la semana*/
+.alejado {
+    padding-left: 50px;
+    position: relative;
+}
+
+.barra {
+    height: 1px;
+    width: 470px; /* Ancho total menos el espacio del lado izquierdo */
+    background-color: rgb(110, 134, 129);
+    margin-left: 50px; /* Margen izquierdo igual al espacio del lado izquierdo */
+}
+
+.card {
+    width: 180px;
+    height: 260px;
+    padding: 20px 10px;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: translateX(20px);
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(177, 243, 235, 0.5), rgb(179, 182, 175));
+    z-index: 2;
+    opacity: 0;
+    transition: 0.3s all;
+
+}
+
+.card:hover:before {
+    opacity: 1;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/*el contenido se ajustará de manera que cubra completamente el contenedor*/ 
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card .info {
+    position: relative;
+    z-index: 2;
+    color: #2c2828;
+    opacity: 1;
+    transform: translateY(30px);
+    transition: 0.4s all;
+}
+
+.card:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.card .info  {
+    letter-spacing: 1px;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card .info .btn {
+    text-decoration: none;
+    padding: 5px 10px;
+    background: #fff;
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+    justify-content: center;
+}
+
+.card:hover .info .btn {
+    opacity: 1;
+}
+
+.card p {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    font-size: 10px;
+}
+
+.card:hover p {
+    opacity: 1;
+}
+
+/* Estilos para una lista de tarjetas */
+.card-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+/* Footer */
+footer {
+    background-color: #4C5958;
+    color: white;
+    padding: 20px;
+    bottom: 0; /* Coloca el footer en la parte inferior de la ventana */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-colegio {
+    width: 100px;
+}
+
+.redes{
+    text-align: center;
+}
+
+ul {
+	list-style:none;
+}
+
+.red > li {
+	float:left;
+}
+
+.red li a {
+	background-color:#6fb8b0;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 12px;
+	display:block;
+}
+
+.red li a:hover {
+	background-color:rgb(104, 129, 128);
+}
+
+.red li ul {
+	display:none;
+	position:absolute;
+	min-width:140px;
+}
+
+.red li:hover > ul {
+	display:block;
+}
+
+
+.red li ul li ul {
+	right:-140px;
+	top:0px;
+}

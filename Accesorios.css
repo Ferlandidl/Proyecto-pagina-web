@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+/*Encabezado*/
+header{
+	background-color: #127369;	
+}
+
+/* Buscador */
+#search input::-webkit-search-decoration,
+#search input::-webkit-search-cancel-button {
+    display: none;
+}
+
+#search input[type=search] {
+    outline: none;
+    width: 15px;
+    padding-left: 10px;
+    color: transparent;
+    cursor: pointer;
+    float: left;
+    background: #fff url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+    border: 2px solid #00457e;
+    padding: 9px 10px 9px 32px;
+    width: 55px;
+
+    -webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+    border-radius: 10em;
+
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+
+#search input[type=search]:hover {
+    background-color: #fff;
+}
+
+/*  barra  */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#search input[type=search]:focus {
+    width: 150px;
+    padding-left: 32px;
+    color: #000;
+    background-color: #fff;
+    cursor: auto;
+    width: 130px;
+    background-color: #fff;
+    border: 2px solid #00457e;
+	
+}
+
+#search input:-moz-placeholder {
+    color: transparent;
+}
+
+#search input::-webkit-input-placeholder {
+    color: transparent;
+}
+
+/*Logo*/
+.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+    position: static; 
+}
+/* Contenedor de ícono de usuario y cuadro del carrito */
+.user-cart-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+/* carrito y usuario */
+.user-icon, .cart-box {
+    color: #ffffff;
+    font-size: 24px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+
+/*Navbar*/
+* {
+	margin:0px;
+	padding:0px;
+}
+
+#navbar {
+	margin:auto;
+	width:500px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+ul {
+	list-style:none;
+}
+
+.navbar > li {
+	float:left;
+}
+
+.navbar li a {
+	background-color:#10403B;
+	color:#fff;
+	text-decoration:none;
+	padding:15px 15.3px;
+	display:block;
+}
+
+.navbar li a:hover {
+	background-color:rgb(191, 191, 191);
+}
+
+.navbar li ul {
+	display:none;
+	position:absolute;
+	min-width:140px;
+}
+
+.navbar li:hover > ul {
+	display:block;
+}
+
+.navbar li ul li {
+	position:relative;
+}
+
+.navbar li ul li ul {
+	right:-140px;
+	top:0px;
+}
+
+/*body*/
+h1{
+  text-align: center;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  color: #fbf7f7;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+}
+
+/*CARD */
+.container {
+  width: 850px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrar las tarjetas horizontalmente */
+  align-items: flex-start; /* Alinear las tarjetas en la parte superior */
+}
+
+.card-1 {
+  position: relative;
+  padding: 10px;
+  width: 300px; /* Mismo ancho que las tarjetas en el código principal */
+  margin-right: 50x; /* Espacio entre las tarjetas */
+  margin-left: 60px; /* Espacio entre las tarjetas */
+  margin-bottom: 20px; /* Espacio entre las filas de tarjetas */
+  box-shadow: -1px 15px 30px -12px rgb(32, 32, 32);
+  border-radius: 10px;
+  background-color: #d0e2e2;
+  color: #52686b;
+  cursor: pointer;
+  text-align: center;
+}
+
+.product-image {
+  height: 230px;
+  width: 100%;
+  transform: translate(0, -5px);
+  filter: drop-shadow(5px 5px 5px  rgba(8, 9, 13, 0.4));
+}
+
+.info {
+  text-align: center; 
+}
+
+.info h2 {
+  font-size: 23px;
+}
+
+.info  {
+  margin: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.precio {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  margin-top: 0.8rem;
+}
+.buy-btn {
+  background-color: #141414;
+  padding: 0.6rem 3.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 300ms ease;
+}
+.buy-btn:hover {
+  background-color: #3a3a3a;
+}
+
+
+/* Footer */
+footer {
+    background-color: #4C5958;
+    color: white;
+    padding: 20px;
+    bottom: 0; /* Coloca el footer en la parte inferior de la ventana */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-colegio {
+    width: 100px;
+}
+
+.redes{
+    text-align: center;
+}
+
+ul {
+	list-style:none;
+}
+
+.red > li {
+	float:left;
+}
+
+.red li a {
+	background-color:#6fb8b0;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 12px;
+	display:block;
+}
+
+.red li a:hover {
+	background-color:rgb(104, 129, 128);
+}
+
+.red li ul {
+	display:none;
+	position:absolute;
+	min-width:140px;
+}
+
+.red li:hover > ul {
+	display:block;
+}
+
+
+.red li ul li ul {
+	right:-140px;
+	top:0px;
+}
+
+

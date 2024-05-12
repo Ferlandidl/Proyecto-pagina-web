@@ -1,0 +1,261 @@
+
+/*Encabezado*/
+header{
+	background-color: #127369;	
+}
+
+/* Buscador */
+#search input::-webkit-search-decoration,
+#search input::-webkit-search-cancel-button {
+    display: none;
+}
+
+#search input[type=search] {
+    outline: none;
+    width: 15px;
+    padding-left: 10px;
+    color: transparent;
+    cursor: pointer;
+    float: left;
+    background: #fff url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+    border: 2px solid #00457e;
+    padding: 9px 10px 9px 32px;
+    width: 55px;
+
+    -webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+    border-radius: 10em;
+
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+
+#search input[type=search]:hover {
+    background-color: #fff;
+}
+
+/*  barra  */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#search input[type=search]:focus {
+    width: 150px;
+    padding-left: 32px;
+    color: #000;
+    background-color: #fff;
+    cursor: auto;
+    width: 130px;
+    background-color: #fff;
+    border: 2px solid #00457e;
+	
+}
+
+#search input:-moz-placeholder {
+    color: transparent;
+}
+
+#search input::-webkit-input-placeholder {
+    color: transparent;
+}
+
+/*Logo*/
+.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+    position: static; 
+}
+/* Contenedor de ícono de usuario y cuadro del carrito */
+.user-cart-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+/* carrito y usuario */
+.user-icon, .cart-box {
+    color: #ffffff;
+    font-size: 24px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+
+/*Navbar*/
+* {
+	margin:0px;
+	padding:0px;
+}
+
+#navbar {
+	margin:auto;
+	width:500px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+ul {
+	list-style:none;
+}
+
+.navbar > li {
+	float:left;
+}
+
+.navbar li a {
+	background-color:#10403B;
+	color:#fff;
+	text-decoration:none;
+	padding:15px 15.3px;
+	display:block;
+}
+
+.navbar li a:hover {
+	background-color:rgb(191, 191, 191);
+}
+
+.navbar li ul {
+	display:none;
+	position:absolute;
+	min-width:140px;
+}
+
+.navbar li:hover > ul {
+	display:block;
+}
+
+.navbar li ul li {
+	position:relative;
+}
+
+.navbar li ul li ul {
+	right:-140px;
+	top:0px;
+}
+
+/*body*/
+h1{
+    text-align: center;
+  }
+  
+  *{box-sizing:border-box;}
+  
+  .formulario{
+      width:350px;
+      padding:16px;
+      border-radius:10px;
+      margin:auto;
+      background-color:#87a7a1;
+  }
+  
+  form label{
+      width:72px;
+      font-weight:bold;
+      display:inline-block;
+  }
+  
+  form input[type="text"],
+  form input[type="email"]{
+      width:180px;
+      padding:3px 10px;
+      border:1px solid #f6f6f6;
+      border-radius:3px;
+      background-color:#f6f6f6;
+      margin:8px 0;
+      display:inline-block;
+  }
+  
+  form input[type="submit"]{
+      width:100%;
+      padding:8px 16px;
+      margin-top:32px;
+      border:1px solid #000;
+      border-radius:5px;
+      display:block;
+      color:#fff;
+      background-color:#000;
+  } 
+  
+  form input[type="submit"]:hover{
+      cursor:pointer;
+  }
+  
+  textarea{
+      width:100%;
+      height:100px;
+      border:1px solid #f6f6f6;
+      border-radius:3px;
+      background-color:#f6f6f6;			
+      margin:8px 0;
+      /*resize: vertical | horizontal | none | both*/
+      resize:none;
+      display:block;
+  }
+  
+
+/* Footer */
+footer {
+    background-color: #4C5958;
+    color: white;
+    padding: 20px;
+    bottom: 0; /* Coloca el footer en la parte inferior de la ventana */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-colegio {
+    width: 100px;
+}
+
+.redes{
+    text-align: center;
+}
+
+ul {
+	list-style:none;
+}
+
+.red > li {
+	float:left;
+}
+
+.red li a {
+	background-color:#6fb8b0;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 12px;
+	display:block;
+}
+
+.red li a:hover {
+	background-color:rgb(104, 129, 128);
+}
+
+.red li ul {
+	display:none;
+	position:absolute;
+	min-width:140px;
+}
+
+.red li:hover > ul {
+	display:block;
+}
+
+
+.red li ul li ul {
+	right:-140px;
+	top:0px;
+}
+
+
